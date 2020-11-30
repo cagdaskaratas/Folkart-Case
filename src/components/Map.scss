@@ -1,0 +1,104 @@
+.container-fluid-map{
+  padding: 60px 65px 60px 65px;
+  .map-left-container{
+    background: #fff;
+    width: 100%;
+    padding: 0 70px;
+    float: left;
+    height: calc(100% - 124px);
+    display: table;
+    .map-container-inner{
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 66px;
+      text-align: left;
+      line-height: 1;
+      .location-text{
+        color: #df952c;
+      }
+      .location-text-sec{
+        color: #1d4797;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+      .desc-group{
+        p{
+          font-size: 38px;
+          color: #4f4f4f;
+        }
+      }
+    }
+  }
+  .tab-area{
+    padding-bottom: 25px;
+    .school{
+      background: #fff;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hospital{
+      background: #e2e2e2;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .other{
+      background: #d4d5d7;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .tab-type{
+      padding-right: 24px;
+      a{
+        color: #353535;
+      }
+      p{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .container-fluid-map{
+    padding: 20px 15px 20px 15px;
+    .map-left-container{
+      display: none;
+    }
+    .school{
+      background: #fff;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hospital{
+      background: #e2e2e2;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .other{
+      background: #d4d5d7;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .tab-area{
+      .tab-type{
+        padding-right: 0;
+        text-align: center;
+        font-size: 14px;
+        p{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.carousel-inner {
+  .img-height {
+    height: 970px;
+  }
+}
+
+.carousel-form {
+  padding: 30px 30px 20px;
+  background-color: #102b67;
+  border: 15px solid rgba(255, 255, 255, 0.1);;
+  max-width: 410px;
+  position: absolute;
+  top: 55%;
+  right: 70px;
+  transition: 0.3s all;
+  margin-top: -250px;
+  z-index: 5;
+  color: #fff;
+
+  input {
+    width: 100%;
+    height: 42px;
+    background-color: rgba(255, 255, 255, 0.37);
+    margin-bottom: 8px;
+    border: 0;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 0;
+  }
+  .form-checkbox{
+    padding: 10px 15px 0 16px;
+    input{
+      width: 24px;
+      margin: 0;
+    }
+    label {
+      font-size: 12px;
+      margin-left: 10px;
+      text-align: left;
+    }
+    button{
+      width: 141px;
+      height: 42px;
+      background-color: #fff;
+      border: 0;
+      outline: 0;
+      box-shadow: none;
+      font-size: 18px;
+      color: #5e5e5e;
+      font-weight: 500;
+      float: right;
+      cursor: pointer;
+    }
+  }
+
+  textarea {
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.37);
+    border: 0;
+  }
+
+  .input-area {
+    width: 320px;
+  }
+
+  ::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+
+  .form-title {
+    text-align: right;
+  }
+}
+.carousel-text-area{
+  position: absolute;
+  top: 300px;
+  font-size: 43px;
+  color: #efbd52;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  padding: 0 50px;
+}
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%
+}
+.icon-scroll {
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  bottom: 10px;
+  margin-top: -35px;
+  border: 2px solid #fff;
+  border-radius: 25px
+}
+@media (max-width: 767px) {
+  .icon-scroll {
+    position: relative;
+    height: 45px;
+  }
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll
+}
+@keyframes scroll {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(26px)
+  }
+}
+
+
+@media (max-width: 768px) {
+  .carousel-inner {
+    .img-height {
+      height: 220px;
+    }
+    .carousel-form{
+      display: none;
+    }
+  }
+  .carousel-text-main {
+    display: block !important;
+  }
+}

@@ -1,0 +1,174 @@
+.container-fluid-concept{
+  padding: 60px 65px 60px 65px;
+  .box-group{
+    position: relative;
+    overflow: hidden;
+  }
+  .box-text-1{
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    font-size: 64px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .box-text-2{
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    font-size: 64px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .box-text-3{
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+    font-size: 64px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .box-text-4{
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    font-size: 64px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .carousel-fade{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(5,37,97, 0.66);
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s all;
+    padding: 200px 0;
+    ::before{
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      bottom: 30px;
+      left: 50px;
+      border: 1px solid #ffffff;
+      content: '';
+      opacity: 1;
+      transition: opacity 0.35s, transform 0.35s;
+      transform: translate3d(-20px, 0, 0);
+    }
+    p {
+      font-size: 37px;
+      color: #fff;
+      font-weight: 400;
+      opacity: 1;
+      margin-bottom: 15px;
+      transition: opacity 1s, transform 1s;
+    }
+    a{
+      font-weight: 900;
+      font-size: 29px;
+      color: #fff;
+      padding: 13px 40px;
+      border: 1px solid #fff;
+      display: inline-block;
+    }
+  }
+  :hover{
+    opacity: 1;
+    transition: opacity 1s, transform 1s;
+  }
+}
+@media (max-width: 768px) {
+  .container-fluid-concept{
+    padding: 60px 15px 60px 15px;
+    img {
+      width: calc(100% + 60px);
+    }
+    .box-text-1{
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 45px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .box-text-2{
+      position: absolute;
+      top: 15px;
+      left: -110px;
+      font-size: 45px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .box-text-3{
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 45px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .box-text-4{
+      position: absolute;
+      top: 5px;
+      left: -130px;
+      font-size: 45px;
+      font-weight: 900;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .carousel-fade {
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(5, 37, 97, 0.66);
+      text-align: center;
+      opacity: 0;
+      transition: 0.3s all;
+      padding: 20px 0;
+
+      ::before {
+        position: absolute;
+        top: 22px;
+        right: 10px;
+        bottom: 225px;
+        left: 50px;
+        border: 1px solid #ffffff;
+        content: '';
+        opacity: 1;
+        transition: opacity 0.35s, transform 0.35s;
+        transform: translate3d(-20px, 0, 0);
+        padding: 75px;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 22px;
+        color: #fff;
+        font-weight: 400;
+        opacity: 1;
+        margin-bottom: 15px;
+        transition: opacity 1s, transform 1s;
+      }
+
+      a {
+        font-weight: 900;
+        font-size: 14px;
+        color: #fff;
+        padding: 13px 40px;
+        border: 1px solid #fff;
+        display: inline-block;
+      }
+    }
+    :hover{
+      opacity: 1;
+      transition: opacity 1s, transform 1s;
+    }
+  }
+}

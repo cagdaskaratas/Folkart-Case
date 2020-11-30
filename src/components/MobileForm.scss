@@ -1,0 +1,81 @@
+.mobile-form-show {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-form-show {
+    display: contents;
+
+    .mobile-form-title p {
+      margin: 0;
+      padding: 10px;
+      font-size: 32px;
+      color: #df952c;
+      font-weight: bold;
+    }
+
+    .carousel-form-mobile {
+      margin: 0 15px 15px 15px;
+      padding: 30px 0;
+      background-color: #102b67;
+      border: 15px solid #383050;
+      transition: 0.3s all;
+      color: #fff;
+
+      input {
+        width: 100%;
+        height: 42px;
+        background-color: rgba(255, 255, 255, 0.37);
+        margin-bottom: 8px;
+        border: 0;
+        outline: none;
+        padding: 0 10px;
+        border-radius: 0;
+      }
+
+      textarea {
+        border-radius: 0;
+        background-color: rgba(255, 255, 255, 0.37);
+        border: 0;
+      }
+
+      .input-area {
+        width: 320px;
+      }
+
+      ::placeholder {
+        color: #fff;
+        opacity: 1;
+      }
+
+      .form-title {
+        text-align: right;
+      }
+      .form-mobile-checkbox{
+        padding: 10px 15px 0 16px;
+        input{
+          width: 24px;
+          margin: 0;
+        }
+        label {
+          font-size: 12px;
+          margin: 0 0 0 10px;
+          text-align: left;
+        }
+        button{
+          width: 141px;
+          height: 42px;
+          background-color: #fff;
+          border: 0;
+          outline: 0;
+          box-shadow: none;
+          font-size: 18px;
+          color: #5e5e5e;
+          font-weight: 500;
+          float: right;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

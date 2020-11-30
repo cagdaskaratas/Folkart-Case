@@ -1,0 +1,37 @@
+.container-fluid-create{
+  display: none;
+}
+@media (max-width: 768px) {
+  .container-fluid-create {
+    padding: 35px 15px  15px;
+    display: revert;
+
+    .right-slider-bottom{
+      background: url("../img/designBg.jpg") repeat no-repeat;
+      height: 163px;
+      display: revert;
+      color: #fff;
+      font-size: 24px;
+      padding: 20px;
+      text-align: right;
+      .option-text{
+        color: #7e95c1;
+        font-weight: 200;
+      }
+      .home-create-text{
+        font-weight: 900;
+        padding-bottom: 10px;
+      }
+      .create-button{
+        background: #052156;
+        font-size: 15px;
+        padding: 15px 20px 15px 50px;
+        color: #fff;
+        i{
+          padding: 10px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
